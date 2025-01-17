@@ -4,7 +4,6 @@
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
@@ -13,4 +12,202 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font-family);
+  font-weight: var(--text-font-weight);
+  font-size: 18px;
+  line-height: 21px;
+  background-image: 
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(#E7E7E7 0%, #1A1A1A 100%);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* ----------------------------HEADER---------------------------- */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--header-margin);
+}
+
+.header-content {
+  font-family: var(--accent-font-family);
+  text-transform: uppercase;
+  block-size: var(--header-block-size);
+  inline-size: var(--content-inline-size);
+  border: 2px solid #000;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-title {
+  font-size: 49px;
+  line-height: 49px;
+}
+
+.main-subtitle {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+/* ----------------------------Основной контент---------------------------- */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  inline-size: var(--content-inline-size);
+  margin: var(--content-margin);
+}
+
+/* ----------------------------Карточки. Список карточек и его элементы.---------------------------- */
+
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.card {
+  display: grid;
+  grid-template: repeat(3, min-content) / 1fr;
+  border: 2px solid #000;
+  background-color: #fff;
+}
+
+.card-title {
+  padding: 5px 10px;
+}
+
+.image-block {
+  position: relative;
+  block-size: 700px;
+  border-block-start: 2px solid #000;
+  border-block-end: 2px solid #000;
+}
+
+.car-image {
+  inline-size: 696px;
+  aspect-ratio: 1 / 1;
+}
+
+.car-image_label {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-family: var(--accent-font-family);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #fff;
+  mix-blend-mode: hard-light;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.card-details p:nth-child(1) {
+  margin-block-end: 27px;
+}
+
+.card-details p:nth-child(2) {
+  margin-block-end: 25px;
+}
+
+/* ----------------------------Фильтры для картинок---------------------------- */
+
+.card:nth-child(2) .image-block .car-image {
+  filter: sepia(0.5);
+}
+
+.card:nth-child(3) .image-block .car-image {
+  filter: grayscale(1);
+}
+
+.card:nth-child(4) .image-block .car-image {
+  filter: 
+    contrast(1.2)
+    brightness(1.8);
+}
+
+.card:nth-child(5) .image-block .car-image {
+  filter: 
+    brightness(0.7)
+    saturate(3);
+}
+
+.card:nth-child(6) .image-block .car-image {
+  filter: hue-rotate(120deg);
+}
+
+.card:nth-child(7) .image-block .car-image {
+  filter: blur(12px);
+}
+
+.card:nth-child(8) .image-block .car-image {
+  filter: hue-rotate(290deg);
+}
+
+/* ----------------------------Блок с кнопками для карточек---------------------------- */
+
+.card__like-button {
+  inline-size: 130px;
+  block-size: 38px;
+  align-self: flex-end;
+  border: 2px solid #000;
+}
+
+.button__text {
+  font-family: var(--accent-font-family);
+  font-size: 14px;
+  line-height: 12.6px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--card-buttons-gap);
+}
+
+.card__icon-button {
+  border: none;
+  padding: 0;
+  inline-size: 39px;
+  block-size: 36px;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+/* ----------------------------Кнопка с кассетой в конце страницы---------------------------- */
+
+.icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--card__icon-button-gap);
+  border: 2px solid #000;
+  inline-size: 335px;
+  block-size: 51px;
+  background-color: #fff;
+  margin: var(--card__icon-button-margin);
+}
+
+/* ----------------------------Запросы---------------------------- */
+
+@supports (-webkit-text-stroke: 0.2px #fff) {
+  .car-image_label {
+    -webkit-text-stroke: 0.2px #fff;
+  }
 }
