@@ -16,7 +16,7 @@
   --card-buttons-gap: 12px;
 
   --contour-fill-color: #000;
-  --main-body-fill-color: none;
-  --core-fill-color: none;
+  --main-body-fill-color: #000;
+  --core-fill-color: #000;
   --sparks-fill-color: #ff0000;
 }
