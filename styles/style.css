@@ -88,14 +88,14 @@
 
 .image-block {
   position: relative;
-  block-size: 700px;
+  block-size: var(--content-inline-size);
   border-block-start: 2px solid #000;
   border-block-end: 2px solid #000;
 }
 
 .car-image {
-  inline-size: 696px;
-  aspect-ratio: 1 / 1;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .car-image_label {
@@ -392,5 +392,16 @@
 @supports (-webkit-text-stroke: 0.2px #fff) {
   .car-image_label {
     -webkit-text-stroke: 0.2px #fff;
+  }
+}
+
+@media (width <= 375px) {
+  .icon-button {
+    flex-direction: column;
+    block-size: 80px;
+  }
+
+  .icon-button::after {
+    block-size: 80px;
   }
 }
