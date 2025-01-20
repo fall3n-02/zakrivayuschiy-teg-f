@@ -13,9 +13,9 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font-family);
-  font-weight: var(--text-font-weight);
   font-size: 18px;
   line-height: 21px;
+  font-variation-settings: 'wght' var(--text-font-weight);
   background-image: 
     repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
@@ -207,7 +207,6 @@
   inline-size: 39px;
   block-size: 38px;
   cursor: pointer;
-  transition: border 0.3s ease;
   outline: 2px solid transparent;
   outline-offset: -2px;
   transition: outline-color 0.3s ease;
@@ -341,7 +340,7 @@
   opacity: 1;
 }
 
-.like-icon.is-liked .contour{
+.like-icon.is-liked .contour {
   fill: var(--sparks-fill-color);
   transition: fill 0.1s linear;
 }
