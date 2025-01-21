@@ -16,7 +16,7 @@
   font-size: 18px;
   line-height: 21px;
   font-variation-settings: 'wght' var(--text-font-weight);
-  background-image: 
+  background-image:
     repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(#E7E7E7 0%, #1A1A1A 100%);
@@ -134,15 +134,13 @@
 }
 
 .card:nth-child(4) .image-block .car-image {
-  filter: 
-    contrast(1.2)
-    brightness(1.8);
+  filter:
+    contrast(1.2) brightness(1.8);
 }
 
 .card:nth-child(5) .image-block .car-image {
-  filter: 
-    brightness(0.7)
-    saturate(3);
+  filter:
+    brightness(0.7) saturate(3);
 }
 
 .card:nth-child(6) .image-block .car-image {
@@ -219,13 +217,13 @@
 }
 
 .core {
-  transition: 
-    opacity 0.3s linear, 
+  transition:
+    opacity 0.3s linear,
     fill 0.3s linear;
 }
 
 .main-body {
-  transition: 
+  transition:
     opacity 0.3s 0.05s linear,
     fill 0.3s 0.05s linear;
 }
@@ -272,10 +270,6 @@
 .icon-button_svg {
   position: relative;
   z-index: 2;
-  color: #000;
-}
-
-.icon-button .icon-button_svg {
   color: #fff;
   mix-blend-mode: difference;
 }
@@ -360,7 +354,7 @@
   padding: 30px;
   background-color: #fff;
   border: 2px solid #000;
-} 
+}
 
 .dialog-menu::backdrop {
   background-color: rgba(0 0 0 / 0.75);
@@ -369,7 +363,7 @@
 .dialog-menu_info {
   display: flex;
   align-items: center;
-} 
+}
 
 .dialog-menu_info p {
   margin-inline-start: 20px;
@@ -394,7 +388,7 @@
   }
 }
 
-@media (width <= 375px) {
+@media (width <=375px) {
   .icon-button {
     flex-direction: column;
     block-size: 80px;
