@@ -7,8 +7,14 @@
 
   --content-inline-size: clamp(320px, 100%, 700px);
   --header-block-size: clamp(327px, 87.2vw, 368px);
+  --dialog-menu-inline-size: 353px;
+  --main-title-font-size: 65px;
+  --main-subtitle-font-size: 23px;
+  --dialog-menu-text-size: 198px;
+  --dialog-menu_info-gap: 25px;
 
   --header-margin: 102px 0 0 0;
+  --main-title-margin: 0 0 29px 0;
   --content-margin: 100px auto 50px auto;
   --card__icon-button-margin: 50px 0 103px 0;
   --card__icon-button-gap: 8px;
@@ -22,7 +28,12 @@
 
 @media (width <= 375px) {
   :root {
-    --card__icon-button-margin: 52px 0 0 0;
+    --card__icon-button-margin: 52px 0 100px 0;
     --header-margin: 100px 0 0 0;
+
+    --main-title-font-size: 49px;
+    --main-subtitle-font-size: 14px;
+    --dialog-menu-inline-size: 341px;
+    --dialog-menu_info-gap: 40px;
   }
 }

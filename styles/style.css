@@ -48,13 +48,14 @@
 }
 
 .main-title {
-  font-size: 49px;
-  line-height: 49px;
+  font-size: var(--main-title-font-size);
+  margin: var(--main-title-margin);
 }
 
 .main-subtitle {
   font-size: 14px;
   line-height: 14px;
+  font-size: var(--main-subtitle-font-size);
 }
 
 /* ----------------------------Основной контент---------------------------- */
@@ -84,6 +85,8 @@
 
 .card-title {
   padding: 5px 10px;
+  font-size: 18px;
+  font-variation-settings: 'wght' var(--title-font-weight);
 }
 
 .image-block {
@@ -230,8 +233,8 @@
 
 .main-body {
   transition:
-    opacity 0.3s 0.05s linear,
-    fill 0.3s 0.05s linear;
+    opacity 0.3s linear,
+    fill 0.3s linear;
 }
 
 .contour {
@@ -293,23 +296,21 @@
 .card__icon-button:hover .core {
   fill: var(--contour-fill-color);
   opacity: 1;
-  transition-delay: 0.03s;
 }
 
 .card__icon-button:hover .main-body {
   fill: var(--contour-fill-color);
   opacity: 1;
-  transition-delay: 0;
+  transition-delay: 0.05s;
 }
 
 .card__icon-button:active .core {
   fill: var(--sparks-fill-color);
-  transition-delay: 0.03s;
 }
 
 .card__icon-button:active .main-body {
   fill: var(--sparks-fill-color);
-  transition-delay: 0;
+  transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .core {
@@ -320,6 +321,7 @@
 .like-icon.is-liked .main-body {
   fill: var(--sparks-fill-color);
   opacity: 1;
+  transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .contour {
@@ -342,6 +344,7 @@
   padding: 30px;
   background-color: #fff;
   border: 2px solid #000;
+  inline-size: var(--dialog-menu-inline-size);
 }
 
 .dialog-menu::backdrop {
@@ -350,15 +353,16 @@
 
 .dialog-menu_info {
   display: flex;
+  justify-content: end;
   align-items: center;
 }
 
 .dialog-menu_info p {
-  margin-inline-start: 20px;
+  margin-inline-start: var(--dialog-menu_info-gap);
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  inline-size: 234px;
+  inline-size: var(--dialog-menu-text-size);
 }
 
 .dialog-menu_button {
@@ -369,7 +373,7 @@
 }
 
 .dialog-menu_info .icon-button_svg {
-  scale: 1.9;
+  scale: 1.857;
 }
 
 /* ----------------------------Запросы---------------------------- */
@@ -377,7 +381,7 @@
 @supports (-webkit-text-stroke: 0.2px #fff) {
   .car-image_label {
     text-shadow: none;
-    -webkit-text-stroke: 0.2px #fff;
+    -webkit-text-stroke: 0.5px #fff;
   }
 }
 
