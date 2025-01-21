@@ -380,6 +380,10 @@
   cursor: pointer;
 }
 
+.dialog-menu_info .icon-button_svg {
+  scale: 1.9;
+}
+
 /* ----------------------------Запросы---------------------------- */
 
 @supports (-webkit-text-stroke: 0.2px #fff) {
