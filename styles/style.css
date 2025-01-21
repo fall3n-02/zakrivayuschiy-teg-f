@@ -53,8 +53,6 @@
 }
 
 .main-subtitle {
-  font-size: 14px;
-  line-height: 14px;
   font-size: var(--main-subtitle-font-size);
 }
 
@@ -154,7 +152,7 @@
   filter: blur(12px);
 }
 
-.filter-hue-rotate-m  {
+.filter-hue-rotate-m {
   filter: hue-rotate(290deg);
 }
 
