@@ -8,16 +8,18 @@
   --content-inline-size: clamp(320px, 100%, 700px);
   --header-block-size: clamp(327px, 87.2vw, 368px);
   --dialog-menu-inline-size: 353px;
-  --main-title-font-size: 65px;
-  --main-subtitle-font-size: 23px;
-  --dialog-menu-text-size: 234px;
+  --main-title-font-size: clamp(49px, 2.7104rem + 1.5023vw, 65px);;
+  --main-subtitle-font-size: clamp(14px, 0.6769rem + 0.8451vw, 23px);
+  --dialog-menu-text-size: min(52.8vw, 234px);
   --dialog-menu_info-gap: 25px;
+  --icon-button-block-size: 55px;
+  --icon-button-inline-size: 335px;
 
   --header-margin: 102px 0 0 0;
-  --header-content-padding: 127px 120.5px;
+  --header-content-padding: min(127px, 10vw) min(120.5px);
   --main-title-margin: 25px 0 22px 0;
-  --content-margin: 100px auto 50px auto;
-  --card__icon-button-margin: 50px 0 103px 0;
+  --content-margin: 100px auto 0 auto;
+  --icon-button-margin: 50px 0 103px 0;
   --card__icon-button-gap: 8px;
   --card-buttons-gap: 12px;
 
@@ -29,13 +31,17 @@
 
 @media (width <= 375px) {
   :root {
-    --card__icon-button-margin: 52px 0 100px 0;
+    --icon-button-margin: 52px 0 100px 0;
     --header-margin: 100px 0 0 0;
+    --header-content-padding: 120px 14px;
+    --main-title-margin: 15px 0 8px 0;
 
     --main-title-font-size: 49px;
     --main-subtitle-font-size: 14px;
     --dialog-menu-inline-size: 341px;
     --dialog-menu_info-gap: 40px;
     --dialog-menu-text-size: 198px;
+    --icon-button-block-size: 84px;
+    --icon-button-inline-size: 306px;
   }
 }
