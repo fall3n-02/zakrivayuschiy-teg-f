@@ -10,11 +10,12 @@
   --dialog-menu-inline-size: 353px;
   --main-title-font-size: 65px;
   --main-subtitle-font-size: 23px;
-  --dialog-menu-text-size: 198px;
+  --dialog-menu-text-size: 234px;
   --dialog-menu_info-gap: 25px;
 
   --header-margin: 102px 0 0 0;
-  --main-title-margin: 0 0 20px 0;
+  --header-content-padding: 127px 120.5px;
+  --main-title-margin: 25px 0 22px 0;
   --content-margin: 100px auto 50px auto;
   --card__icon-button-margin: 50px 0 103px 0;
   --card__icon-button-gap: 8px;
@@ -35,5 +36,6 @@
     --main-subtitle-font-size: 14px;
     --dialog-menu-inline-size: 341px;
     --dialog-menu_info-gap: 40px;
+    --dialog-menu-text-size: 198px;
   }
 }

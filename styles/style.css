@@ -36,15 +36,14 @@
 .header-content {
   font-family: var(--accent-font-family), fantasy;
   text-transform: uppercase;
-  block-size: var(--header-block-size);
   inline-size: var(--content-inline-size);
   border: 2px solid #000;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: var(--header-content-padding);
 }
 
 .main-title {
@@ -97,6 +96,8 @@
 .car-image {
   inline-size: 100%;
   block-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .car-image_label {
@@ -108,6 +109,7 @@
   text-transform: uppercase;
   text-shadow: 0 0 2px #fff;
   mix-blend-mode: hard-light;
+  opacity: 50%;
 }
 
 .card-details {
@@ -171,6 +173,7 @@
   cursor: pointer;
   overflow: hidden;
   background-color: #fff;
+  transition: box-shadow 0.3s ease;
 }
 
 .button::after {
@@ -188,7 +191,6 @@
 .card__like-button {
   inline-size: 130px;
   block-size: 38px;
-  transition: box-shadow 0.3s ease;
 }
 
 .button__text {
@@ -236,7 +238,7 @@
 }
 
 .contour {
-  transition: fill 0.3s 0.06s linear;
+  transition: fill 0.1s linear;
 }
 
 .heart {
@@ -253,7 +255,6 @@
   inline-size: 335px;
   block-size: 51px;
   margin: var(--card__icon-button-margin);
-  transition: box-shadow 0.3s ease;
 }
 
 .icon-button_svg {
@@ -379,7 +380,7 @@
 @supports (-webkit-text-stroke: 0.2px #fff) {
   .car-image_label {
     text-shadow: none;
-    -webkit-text-stroke: 0.5px #fff;
+    -webkit-text-stroke: 0.6px #fff;
   }
 }
 
