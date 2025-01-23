@@ -8,7 +8,7 @@
   --content-inline-size: clamp(320px, 100%, 700px);
   --header-block-size: clamp(327px, 87.2vw, 368px);
   --dialog-menu-inline-size: 353px;
-  --main-title-font-size: clamp(49px, 2.7104rem + 1.5023vw, 65px);;
+  --main-title-font-size: clamp(49px, 2.7104rem + 1.5023vw, 65px);
   --main-subtitle-font-size: clamp(14px, 0.6769rem + 0.8451vw, 23px);
   --dialog-menu-text-size: min(52.8vw, 234px);
   --dialog-menu_info-gap: 25px;
