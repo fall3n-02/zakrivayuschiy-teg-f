@@ -16,7 +16,7 @@
   --icon-button-inline-size: 335px;
 
   --header-margin: 102px 0 0 0;
-  --header-content-padding: min(127px, 10vw) min(120.5px);
+  --header-content-padding: min(127px, 10vw) min(120.5px, 5vw);
   --main-title-margin: 25px 0 22px 0;
   --content-margin: 100px auto 0 auto;
   --icon-button-margin: 50px 0 103px 0;
@@ -29,12 +29,13 @@
   --sparks-fill-color: #ff0000;
 }
 
-@media (width <= 375px) {
+@media (width <=375px) {
   :root {
     --icon-button-margin: 52px 0 100px 0;
     --header-margin: 100px 0 0 0;
-    --header-content-padding: 120px 14px;
     --main-title-margin: 15px 0 8px 0;
+    --card__icon-button-gap: 13px;
+    --header-content-padding: 120px 14px;
 
     --main-title-font-size: 49px;
     --main-subtitle-font-size: 14px;
